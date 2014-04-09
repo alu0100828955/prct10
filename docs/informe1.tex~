@@ -1,0 +1,55 @@
+\documentclass[spanish,a4paper,10pt]{article}
+
+\usepackage{latexsym,amsfonts,amssymb,amstext,amsthm,float,amsmath}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[dvips]{epsfig}
+\usepackage{graphicx}
+
+\begin{document}
+\title{Aproximacion del numero $\pi$ con una maquina de computo}
+\author{Carlos Herrera Carballo \\ Practica de Laboratorio \#10}
+\date{9 de abril de 2014}
+
+\maketitle
+
+\begin{abstract}
+El objetivo de esta practica es entregar un informe escrito en \LaTeX{}
+\end{abstract}
+\section{Motivación y Objetivos}
+A lo largo de la historia han sido muchas las formas utilizadas por el
+ser humano para calcular aproximaciones cada vez más exactas del número $\pi$.
+%
+El objetivo de esta práctica de laboratorio es implementar el código \textsf{Python}
+que permita a\-pro\-xi\-mar el número $\pi$ con una cierta precisión.
+%
+$\pi$ se puede calcular mediante integración:
+
+$$\int_{0}^{1} \! \frac{4}{1+x^2}\, dx = 4(atan(1) -atan(0)) = \pi $$
+\subsection{Información previa}
+En el actual plan de estudios de Matemáticas surge de la adaptación de las titulaciones al Espacio Europeo de Educación Superior. La principal característica es que está basado en competencias. En la asignatura Técnicas Experimentales se ha de desarrollar la competencia transversal:
+Comunicar, tanto por escrito como de forma oral, conocimientos,procedimientos,resultados e ideas matemáticas.
+\section{Ejercicios propuestos}
+\subsection{Descripción del ejercicio a entregar}
+Se ha de crear un directorio en la carpeta de proyecto, en el que se han de guardar los archivos que se generen al realizar esta práctica\footnote{Nota 1: Esta práctica es la práctica 10 y esto es un ejemplo de pie de página}. Luego debe realizar un informe que contenga ciertos componentes básicos\footnote{Nota 2:Los componentes básicos están especificados en el guión de la práctica, y esto es un segundo ejemplo de pie de página}.
+
+\section{Insertando un gráfico}
+\includegraphics[scale=0.15]{imagen1.eps}
+\label{Mi primer grafico}
+
+En \ref{Mi primer grafico} aparece el primer gráfico de este informe.
+
+\section{Insertando una tabla}
+\begin{tabular}{lrc}
+Nombre & Coche & Antigüedad \\
+\hline
+Pepe & seat & 3 \\
+Juana & opel & 1 \\
+Carlos & ferrari & 5
+\label{Mi primera tabla}
+\end{tabular}
+
+
+En \ref{Mi primera tabla} aparece la primera tabla de este informe.
+
+\end{document}
